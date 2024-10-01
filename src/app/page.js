@@ -152,7 +152,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Video Section */}
-      <section ref={videoSectionRef} className="relative h-screen flex items-center justify-center bg-black">
+      <section ref={videoSectionRef} className="relativen h-screen flex items-center justify-center bg-black">
         {/* Background Video 1 */}
         {!showSecondVideo && (
           <div className="absolute top-0 left-0 h-full w-full overflow-hidden">
