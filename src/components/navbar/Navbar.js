@@ -46,14 +46,30 @@ export default function Navbar() {
         <div className="container max-w-screen-xl mx-auto flex justify-between items-center px-8">
           <div className="text-lg font-bold text-white">Mast Mart</div>
           <ul className="flex space-x-8 text-lg items-center">
-            {["Home", "About Us", "How It Works", "Contact Us"].map((item, index) => (
-              <li key={index} className="relative group">
-                <Link href={`/${item.toLowerCase().replace(/\s+/g, "-")}`} legacyBehavior>
-                  <a className="text-white">{item}</a>
-                </Link>
-                <span className="absolute left-0 bottom-[-2px] w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </li>
-            ))}
+            <li className="relative group">
+              <Link href="/" className="text-white">
+                Home
+              </Link>
+              <span className="absolute left-0 bottom-[-2px] w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </li>
+            <li className="relative group">
+              <Link href="/about" className="text-white">
+                About Us
+              </Link>
+              <span className="absolute left-0 bottom-[-2px] w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </li>
+            <li className="relative group">
+              <Link href="/how-it-works" className="text-white">
+                How It Works
+              </Link>
+              <span className="absolute left-0 bottom-[-2px] w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </li>
+            <li className="relative group">
+              <Link href="/contact" className="text-white">
+                Contact Us
+              </Link>
+              <span className="absolute left-0 bottom-[-2px] w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </li>
           </ul>
         </div>
       </nav>
