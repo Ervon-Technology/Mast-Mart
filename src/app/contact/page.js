@@ -36,7 +36,7 @@ export default function Contact() {
       <section className="text-center my-16">
         <h1 className="text-5xl font-bold text-green-700">Contact Mast Mart</h1>
         <p className="text-lg mt-6 max-w-2xl mx-auto text-gray-600">
-          Whether you’re a retailer, farmer, or interested in partnering with us, we are always here to assist.
+          Whether you&apos;re a retailer, farmer, or interested in partnering with us, we are always here to assist.
         </p>
       </section>
 

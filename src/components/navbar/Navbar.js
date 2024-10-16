@@ -1,27 +1,16 @@
 "use client"; // Mark as client-side component
 
 import { useState, useEffect } from "react";
-import Link from "next/link"; // Import Next.js Link component
+import Link from "next/link";
 import { FiAlignRight } from "react-icons/fi";
 import { AiOutlineLinkedin, AiOutlineInstagram } from "react-icons/ai";
+import Image from "next/image"; // Import Next.js Image component
+import MastMartLogo from "../../../public/img/home/MastMart.png"; // Assuming logo is in the public folder
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  // Detect scroll and set navbar background
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const [showNavbar, setShowNavbar] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   // Toggle mobile menu
   const toggleMenu = () => {
@@ -33,19 +22,40 @@ export default function Navbar() {
     setMenuOpen(false);
   };
 
+  // Detect scroll direction to hide or show the navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setShowNavbar(false); // Hide navbar when scrolling down
+      } else {
+        setShowNavbar(true); // Show navbar when scrolling up
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
     <>
       {/* Desktop and Larger Screens Navbar */}
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ease-in-out font-gt ${
-          scrolled
-            ? "bg-green-600/70 backdrop-blur-md border-b border-gray-400"
-            : "bg-green-700 border-b border-gray-400"
-        } hidden lg:flex h-20`}
+          showNavbar ? "translate-y-0" : "-translate-y-full"
+        } bg-[#045518] hidden lg:flex h-20`}
       >
-        <div className="container max-w-screen-xl mx-auto flex justify-between items-center px-8">
-          <div className="text-lg font-bold text-white">Mast Mart</div>
-          <ul className="flex space-x-8 text-lg items-center">
+        <div className="container max-w-screen-xl mx-auto flex justify-between px-4">
+          <div className="w-32 h-10">
+            <Image
+              src={MastMartLogo}
+              alt="Mast Mart Logo"
+              width={128}
+              height={40}       
+              priority={true}
+            />
+          </div>
+          <ul className="flex space-x-6 text-lg items-center">
             <li className="relative group">
               <Link href="/" className="text-white">
                 Home
@@ -59,8 +69,14 @@ export default function Navbar() {
               <span className="absolute left-0 bottom-[-2px] w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
             </li>
             <li className="relative group">
-              <Link href="/how-it-works" className="text-white">
-                How It Works
+              <Link href="/for-farmers" className="text-white">
+                For Farmers
+              </Link>
+              <span className="absolute left-0 bottom-[-2px] w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </li>
+            <li className="relative group">
+              <Link href="/for-retailers" className="text-white">
+                For Retailers
               </Link>
               <span className="absolute left-0 bottom-[-2px] w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
             </li>
@@ -76,13 +92,19 @@ export default function Navbar() {
 
       {/* Mobile and Tablet Navbar */}
       <div
-        className={`lg:hidden fixed top-0 left-0 w-full flex justify-between items-center px-6 py-3 z-50 transition-all duration-300 ease-in-out ${
-          scrolled
-            ? "bg-green-600/70 backdrop-blur-md border-b border-gray-400"
-            : "bg-green-600 border-b border-gray-400"
-        }`}
+        className={`lg:hidden fixed top-0 left-0 w-full flex justify-between items-center px-4 py-3 z-50 transition-transform duration-300 ease-in-out ${
+          showNavbar ? "translate-y-0" : "-translate-y-full"
+        } bg-[#045518]`}
       >
-        <div className="text-lg font-bold text-white">Mast Mart</div>
+        <div className="w-24 h-8">
+          <Image
+            src={MastMartLogo}
+            alt="Mast Mart Logo"
+            width={96}
+            height={32}
+            priority={true}
+          />
+        </div>
         {!menuOpen && (
           <button onClick={toggleMenu}>
             <FiAlignRight className="w-8 h-8 text-white" />
@@ -102,8 +124,18 @@ export default function Navbar() {
           }`}
         >
           <div className="flex justify-between items-center px-4 py-3 border-b border-gray-200">
-            <div className="text-lg font-bold text-green-600">Mast Mart</div>
-            <button className="text-black text-3xl font-bold" onClick={toggleMenu}>
+            <div className="w-24 h-8">
+              <Image
+                src={MastMartLogo}
+                alt="Mast Mart Logo"
+                width={96}
+                height={32}
+              />
+            </div>
+            <button
+              className="text-black text-3xl font-bold"
+              onClick={toggleMenu}
+            >
               &#10005; {/* Close button */}
             </button>
           </div>
@@ -120,8 +152,21 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="py-3 w-full text-center">
-              <Link href="/how-it-works" className="text-black" onClick={closeMenu}>
-                How It Works
+              <Link
+                href="/for-farmers"
+                className="text-black"
+                onClick={closeMenu}
+              >
+                For Farmers
+              </Link>
+            </li>
+            <li className="py-3 w-full text-center">
+              <Link
+                href="/for-retailers"
+                className="text-black"
+                onClick={closeMenu}
+              >
+                For Retailers
               </Link>
             </li>
             <li className="py-3 w-full text-center">

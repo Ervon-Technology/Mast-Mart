@@ -2,8 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide the vertical scrollbar but allow scrolling */
+html, body {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and WebKit-based browsers */
+}
+
+
+@font-face {
+  font-family: 'Martel';
+  src: url('../fonts/Martel-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Martel';
+  src: url('../fonts/Martel-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-martel-bold {
+  font-family: 'Martel', sans-serif;
+  font-weight: 700;
+}
+.font-martel-demibold {
+  font-family: 'Martel', sans-serif;
+  font-weight: 600;
+}
+
+
+
 
 /*Home Page*/
+
 /* Animations */
 @keyframes fade-in {
   0% {
