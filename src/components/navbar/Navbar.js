@@ -69,13 +69,13 @@ export default function Navbar() {
               <span className="absolute left-0 bottom-[-2px] w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
             </li>
             <li className="relative group">
-              <Link href="/for-farmers" className="text-white">
+              <Link href="/farmers" className="text-white">
                 For Farmers
               </Link>
               <span className="absolute left-0 bottom-[-2px] w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
             </li>
             <li className="relative group">
-              <Link href="/for-retailers" className="text-white">
+              <Link href="/retailers" className="text-white">
                 For Retailers
               </Link>
               <span className="absolute left-0 bottom-[-2px] w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>

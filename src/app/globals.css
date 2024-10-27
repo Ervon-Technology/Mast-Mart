@@ -1,3 +1,4 @@
+/* Tailwind Base */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,34 +13,75 @@ html::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and WebKit-based browsers */
 }
 
+/* Font Imports - Inter and Martel */
+
+/* Inter Fonts */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts//Inter-Black.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: 'Martel';
-  src: url('../fonts/Martel-Bold.ttf') format('truetype');
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.otf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Martel';
-  src: url('../fonts/Martel-DemiBold.ttf') format('truetype');
+  font-family: 'Inter';
+  src: url('../fonts/Inter-ExtraBold.otf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-SemiBold.otf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
-.font-martel-bold {
-  font-family: 'Martel', sans-serif;
+
+/* Utility Font Classes */
+.font-inter-black {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+}
+.font-inter-extrabold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+}
+.font-inter-bold {
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
-.font-martel-demibold {
-  font-family: 'Martel', sans-serif;
+.font-inter-semibold {
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
+}
+.font-inter-regular {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 
-
-
-/*Home Page*/
 
 /* Animations */
 @keyframes fade-in {
