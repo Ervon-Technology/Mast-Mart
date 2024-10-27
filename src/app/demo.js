@@ -53,7 +53,7 @@ export default function Home() {
             <span className="text-green-400">Retailers</span> for a Better Future
           </h1>
           <p className="text-xl lg:text-2xl font-medium max-w-3xl leading-relaxed text-gray-200">
-            Let's bring together India's farmers and retailers, providing high-quality produce,
+            Let&apos;s bring together India&apos;s farmers and retailers, providing high-quality produce,
             reliable logistics, and easy access to credit.
           </p>
           <motion.button

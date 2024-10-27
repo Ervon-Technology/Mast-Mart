@@ -211,7 +211,7 @@ const AboutPage = () => {
           >
             <h2 className="text-5xl font-bold mb-6">About Mast Mart</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              At Mast Mart, we're more than just a marketplace - we're a movement towards 
+              At Mast Mart, we&apos;re more than just a marketplace - we&apos;re a movement towards 
               sustainable agriculture and fair trade. As a proud subsidiary of Citly, we leverage 
               cutting-edge technology and deep market insights to create meaningful connections 
               between farmers and consumers, ensuring quality products at fair prices while 
@@ -251,7 +251,7 @@ const AboutPage = () => {
                 To empower Indian farmers by creating direct market access and fair partnerships. 
                 We work to eliminate inefficiencies in the agricultural supply chain, ensure fair 
                 prices for farmers, and deliver quality products to consumers. Through technology 
-                and innovation, we're building a more sustainable and profitable future for Indian agriculture.
+                and innovation, we&apos;re building a more sustainable and profitable future for Indian agriculture.
               </p>
             </motion.div>
 
@@ -476,7 +476,7 @@ const AboutPage = () => {
           >
             <h2 className="text-5xl font-bold mb-6">Ready to Join Us?</h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Be part of our mission to transform Indian agriculture. Whether you're a farmer, retailer, or consumer, we'd love to partner with you.
+              Be part of our mission to transform Indian agriculture. Whether you&apos;re a farmer, retailer, or consumer, we&apos;d love to partner with you.
             </p>
             <button className="bg-white text-green-700 px-8 py-4 rounded-full font-bold hover:bg-green-50 transition-all transform hover:scale-105">
               Get Started Today

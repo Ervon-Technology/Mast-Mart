@@ -65,7 +65,7 @@ export default function Contact() {
           Get in Touch
         </h1>
         <p className="text-gray-600 max-w-2xl mx-auto px-4">
-          Have questions about our services? We're here to help and answer any questions you might have.
+          Have questions about our services? We&apos;re here to help and answer any questions you might have.
         </p>
       </div>
 
