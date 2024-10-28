@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FiAlignRight } from "react-icons/fi";
 import { AiOutlineLinkedin, AiOutlineInstagram } from "react-icons/ai";
-import Image from "next/image"; // Import Next.js Image component
-import MastMartLogo from "../../../public/img/home/MastMart.png"; // Assuming logo is in the public folder
+
+import MastMartLogo from "../../../public/img/home/mastmart.png"; // Assuming logo is in the public folder
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -47,8 +47,8 @@ export default function Navbar() {
       >
         <div className="container max-w-screen-xl mx-auto flex justify-between px-4">
           <div className="w-32 h-10">
-            <Image
-              src={MastMartLogo}
+            <img
+              src="/img/home/mastmart.png"
               alt="Mast Mart Logo"
               width={128}
               height={40}       
@@ -97,8 +97,8 @@ export default function Navbar() {
         } bg-[#045518]`}
       >
         <div className="w-24 h-8">
-          <Image
-            src={MastMartLogo}
+          <img
+            src="/img/home/mastmart.png"
             alt="Mast Mart Logo"
             width={96}
             height={32}
@@ -125,8 +125,8 @@ export default function Navbar() {
         >
           <div className="flex justify-between items-center px-4 py-3 border-b border-gray-200">
             <div className="w-24 h-8">
-              <Image
-                src={MastMartLogo}
+              <img
+                src="/img/home/mastmart.png"
                 alt="Mast Mart Logo"
                 width={96}
                 height={32}
