@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Link from "next/link";
 import {
   ChevronRight,
   Package,
@@ -196,9 +197,9 @@ const AboutPage = () => {
                Explore Products
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-green-700 transition-all transform hover:scale-105">
-              <a href="/contact">
+              <Link href="/contact">
                 Partner With Us 
-              </a>
+              </Link>
             </button>
           </div>
         </motion.div>

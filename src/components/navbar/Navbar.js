@@ -52,7 +52,7 @@ export default function Navbar() {
               alt="Mast Mart Logo"
               width={128}
               height={40}       
-              priority={true}
+              priority="true"
             />
           </div>
           <ul className="flex space-x-6 text-lg items-center">
@@ -102,7 +102,7 @@ export default function Navbar() {
             alt="Mast Mart Logo"
             width={96}
             height={32}
-            priority={true}
+            priority="true"
           />
         </div>
         {!menuOpen && (
@@ -177,12 +177,12 @@ export default function Navbar() {
           </ul>
 
           <div className="flex justify-center space-x-4 py-12 mt-auto">
-            <a href="#" className="text-black">
+            <Link href="#" className="text-black">
               <AiOutlineLinkedin className="w-8 h-8" />
-            </a>
-            <a href="#" className="text-black">
+            </Link>
+            <Link href="#" className="text-black">
               <AiOutlineInstagram className="w-8 h-8" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

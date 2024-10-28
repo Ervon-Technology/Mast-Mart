@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { motion } from "framer-motion"; // Framer Motion for animations
 import { Carousel } from "react-responsive-carousel";
+import Link from "next/link";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Home() {
@@ -195,12 +196,12 @@ export default function Home() {
 
         {/* Call to Action Button */}
         <div className="mt-4">
-          <a
+          <Link
             href="/contact"
             className="inline-block bg-white text-[#045518] font-semibold py-3 px-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </motion.div>
     </section>
@@ -273,12 +274,12 @@ export default function Home() {
 
         {/* Call to Action Button */}
         <div className="mt-4">
-          <a
+          <Link
             href="/contact"
             className="inline-block bg-white text-[#045518] font-semibold py-3 px-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </motion.div>
     </section>
