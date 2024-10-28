@@ -137,39 +137,37 @@ export default function Farmers() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-green-900/90 to-green-800/90">
-          <img
-            src="/api/placeholder/1920/1080"
-            alt="Fertile farmland"
-            className="w-full h-full object-cover mix-blend-overlay"
-          />
-        </div>
-        <div className="relative container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl text-white"
-          >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Connect Directly with Retailers
-            </h1>
-            <p className="text-xl mb-8 text-gray-100">
-              Join Citly's network of 5000+ farmers and access modern farming tools, expert guidance, and direct market connections.
-            </p>
-            <div className="flex gap-4">
-              <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2">
-                Join Network
-                <Leaf className="w-5 h-5" />
-              </button>
-              <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-lg font-medium">
-                Learn More
-              </button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <section className="relative h-[80vh] flex items-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/img/for-farmers/background.jpg')" }}>
+  {/* Black Overlay */}
+  <div className="absolute inset-0 bg-black opacity-50"></div>
+
+  {/* Content */}
+  <div className="relative container mx-auto px-4">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="max-w-3xl text-white"
+    >
+      <h1 className="text-5xl md:text-6xl font-bold mb-6">
+        Connect Directly with Retailers
+      </h1>
+      <p className="text-xl mb-8 text-gray-100">
+        Join Citly&apos;s network of 5000+ farmers and access modern farming tools, expert guidance, and direct market connections.
+      </p>
+      <div className="flex gap-4">
+        <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2">
+          Join Network
+          <Leaf className="w-5 h-5" />
+        </button>
+        <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-lg font-medium">
+          Learn More
+        </button>
+      </div>
+    </motion.div>
+  </div>
+</section>
+
 
       {/* Impact Stats */}
       <motion.section 
@@ -206,7 +204,7 @@ export default function Farmers() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">The Citly Advantage</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Experience the benefits of joining India's most innovative agricultural network.
+            Experience the benefits of joining India&apos;s most innovative agricultural network.
           </p>
         </motion.div>
 
@@ -326,11 +324,11 @@ export default function Farmers() {
 
       {/* Trust Section */}
       <section className="py-24 container mx-auto px-4">
-        <motion.div className="bg-gray-50 p-8 md:p-12 rounded-2xl" {...fadeIn}>
+        <motion.div className="bg-green-50 p-8 md:p-12 rounded-2xl" {...fadeIn}>
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
               <img
-                src="/api/placeholder/600/400"
+                src="/img/for-farmers/farmer.jpg"
                 alt="Trusted by farmers"
                 className="rounded-xl w-full"
               />

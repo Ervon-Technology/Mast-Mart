@@ -67,24 +67,25 @@ export default function Retailers() {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Store Manager, Fresh Market",
-      content: "Partnering with Citly has transformed our produce section. Our customers love the quality, and our margins have improved significantly.",
-      image: "/api/placeholder/64/64"
-    },
-    {
-      name: "Michael Chen",
-      role: "Owner, Urban Grocers",
+      name: "Radhika Iyer",
+      role: "Owner, Urban Bazar",
       content: "The analytics dashboard has been a game-changer for our inventory management. We've reduced waste by 40%.",
-      image: "/api/placeholder/64/64"
+      image: "/img/for-retailers/girl.png"
     },
     {
-      name: "Lisa Rodriguez",
-      role: "Procurement Head, SuperMart",
+      name: "Amit Sharma",
+      role: "Store Manager, Fresh Mart",
+      content: "Partnering with Citly has transformed our produce section. Our customers love the quality, and our margins have improved significantly.",
+      image: "/img/for-retailers/boy.png"
+    },
+    {
+      name: "Rajesh Kumar",
+      role: "Procurement Head, Mega Mart",
       content: "The dedicated support team and efficient delivery system have made our operations seamless.",
-      image: "/api/placeholder/64/64"
+      image: "/img/for-retailers/boy.png"
     }
   ];
+  
 
   const features = [
     {
@@ -114,40 +115,41 @@ export default function Retailers() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-yellow-900/90 to-yellow-800/90">
-          <img
-            src="/api/placeholder/1920/1080"
-            alt="Modern retail store interior"
-            className="w-full h-full object-cover mix-blend-overlay"
-          />
-        </div>
-        <div className="relative container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl text-white"
-          >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Elevate Your Retail Business
-            </h1>
-            <p className="text-xl mb-8 text-gray-100">
-              Join our network of 1000+ successful retailers. Get access to premium products, 
-              smart logistics, and cutting-edge retail management tools.
-            </p>
-            <div className="flex gap-4">
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2">
-                Partner With Us
-                <Store className="w-5 h-5" />
-              </button>
-              <button className="bg-white/20 hover:bg-white/30 text-white px-8 py-3 rounded-lg font-medium">
-                Watch Demo
-              </button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <section
+  className="relative h-[80vh] flex items-center bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/img/for-retailers/background.jpg')" }}
+>
+  {/* Black Overlay */}
+  <div className="absolute inset-0 bg-black opacity-50"></div>
+
+  {/* Content */}
+  <div className="relative container mx-auto px-4">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="max-w-3xl text-white"
+    >
+      <h1 className="text-5xl md:text-6xl font-bold mb-6">
+        Elevate Your Retail Business
+      </h1>
+      <p className="text-xl mb-8 text-gray-100">
+        Join our network of 1000+ successful retailers. Get access to premium
+        products, smart logistics, and cutting-edge retail management tools.
+      </p>
+      <div className="flex gap-4">
+        <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2">
+          Partner With Us
+          <Store className="w-5 h-5" />
+        </button>
+        <button className="bg-white/20 hover:bg-white/30 text-white px-8 py-3 rounded-lg font-medium">
+          Watch Demo
+        </button>
+      </div>
+    </motion.div>
+  </div>
+</section>
+
 
       {/* Stats Section */}
       <motion.section 
@@ -304,7 +306,7 @@ export default function Retailers() {
     <div className="flex flex-col md:flex-row items-center gap-8">
       <div className="md:w-1/2">
         <img
-          src="/api/placeholder/600/400"
+          src="/img/for-retailers/retailer.jpg"
           alt="Retail partner success"
           className="rounded-xl w-full"
         />

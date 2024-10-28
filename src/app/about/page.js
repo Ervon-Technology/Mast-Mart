@@ -30,26 +30,26 @@ const categories = {
     { id: 3, title: 'Brown Rice', description: 'Healthy, fiber-rich rice option.', image: '/img/about/rice/brown-rice.jpg' },
     { id: 4, title: 'Parboiled Rice', description: 'Pre-cooked rice that retains its nutrients.', image: '/img/about/rice/parboiled-rice.jpg' },
     { id: 5, title: 'Jasmine Rice', description: 'Fragrant and slightly sticky rice.', image: '/img/about/rice/jasmine-rice.jpg' },
-    { id: 6, title: 'Wheat', description: 'Staple grain used to make flour.', image: '/img/cereals/wheat.jpg' },
-    { id: 7, title: 'Barley', description: 'Rich in fiber, great for soups and stews.', image: '/img/cereals/barley.jpg' },
-    { id: 8, title: 'Oats', description: 'Versatile grain, perfect for breakfast or baking.', image: '/img/cereals/oats.jpg' },
-    { id: 9, title: 'Millet', description: 'Nutritious, gluten-free grain, ideal for porridges.', image: '/img/cereals/millet.jpg' },
-    { id: 10, title: 'Quinoa', description: 'Protein-packed pseudo-cereal, great for salads.', image: '/img/cereals/quinoa.jpg' },
-    { id: 11, title: 'Turmeric', description: 'Golden spice known for its anti-inflammatory properties.', image: '/img/spices/turmeric.jpg' },
-    { id: 12, title: 'Cumin', description: 'Earthy spice used in curries and soups.', image: '/img/spices/cumin.jpg' },
-    { id: 13, title: 'Coriander', description: 'Fresh and citrusy spice used in various cuisines.', image: '/img/spices/coriander.jpg' },
-    { id: 14, title: 'Cardamom', description: 'Aromatic spice used in desserts and savory dishes.', image: '/img/spices/cardamom.jpg' },
-    { id: 15, title: 'Chili Powder', description: 'Adds heat and flavor to dishes.', image: '/img/spices/chili-powder.jpg' },
-    { id: 16, title: 'Red Lentils', description: 'Quick-cooking lentils, ideal for soups.', image: '/img/pulses/red-lentils.jpg' },
-    { id: 17, title: 'Green Gram (Moong)', description: 'Nutritious pulse rich in protein.', image: '/img/pulses/moong.jpg' },
-    { id: 18, title: 'Chickpeas', description: 'Versatile pulse, great for curries and hummus.', image: '/img/pulses/chickpeas.jpg' },
-    { id: 19, title: 'Black Gram (Urad)', description: 'Key ingredient in dal and dosa batter.', image: '/img/pulses/urad.jpg' },
-    { id: 20, title: 'Pigeon Peas (Toor Dal)', description: 'Popular in Indian dals and soups.', image: '/img/pulses/toor-dal.jpg' },
-    { id: 21, title: 'Carrots', description: 'Rich in beta-carotene and ideal for salads and cooking.', image: '/img/vegetables/carrots.jpg' },
-    { id: 22, title: 'Potatoes', description: 'Staple vegetable used in a variety of dishes.', image: '/img/vegetables/potatoes.jpg' },
-    { id: 23, title: 'Tomatoes', description: 'Versatile vegetable used in sauces and salads.', image: '/img/vegetables/tomatoes.jpg' },
-    { id: 24, title: 'Spinach', description: 'Leafy green rich in iron and antioxidants.', image: '/img/vegetables/spinach.jpg' },
-    { id: 25, title: 'Bell Peppers', description: 'Crunchy and colorful, great for stir-fries and salads.', image: '/img/vegetables/bell-peppers.jpg' },
+    { id: 6, title: 'Wheat', description: 'Staple grain used to make flour.', image: '/img/about/cereals/wheat.jpg' },
+    { id: 7, title: 'Barley', description: 'Rich in fiber, great for soups and stews.', image: '/img/about/cereals/barley.jpg' },
+    { id: 8, title: 'Oats', description: 'Versatile grain, perfect for breakfast or baking.', image: '/img/about/cereals/oats.jpg' },
+    { id: 9, title: 'Millet', description: 'Nutritious, gluten-free grain, ideal for porridges.', image: '/img/about/cereals/millet.jpg' },
+    { id: 10, title: 'Quinoa', description: 'Protein-packed pseudo-cereal, great for salads.', image: '/img/about/cereals/quinoa.jpg' },
+    { id: 11, title: 'Turmeric', description: 'Golden spice known for its anti-inflammatory properties.', image: '/img/about/spices/turmeric.jpg' },
+    { id: 12, title: 'Cumin', description: 'Earthy spice used in curries and soups.', image: '/img/about/spices/cumin.jpg' },
+    { id: 13, title: 'Coriander', description: 'Fresh and citrusy spice used in various cuisines.', image: '/img/about/spices/coriander.jpg' },
+    { id: 14, title: 'Cardamom', description: 'Aromatic spice used in desserts and savory dishes.', image: '/img/about/spices/cardamom.jpg' },
+    { id: 15, title: 'Chili Powder', description: 'Adds heat and flavor to dishes.', image: '/img/about/spices/chilli-powder.jpg' },
+    { id: 16, title: 'Red Lentils', description: 'Quick-cooking lentils, ideal for soups.', image: '/img/about/pulses/red-lentils.jpg' },
+    { id: 17, title: 'Green Gram (Moong)', description: 'Nutritious pulse rich in protein.', image: '/img/about/pulses/green-gram.jpg' },
+    { id: 18, title: 'Chickpeas', description: 'Versatile pulse, great for curries and hummus.', image: '/img/about/pulses/chickpeas.jpg' },
+    { id: 19, title: 'Black Gram (Urad)', description: 'Key ingredient in dal and dosa batter.', image: '/img/about/pulses/black-gram.jpg' },
+    { id: 20, title: 'Pigeon Peas (Toor Dal)', description: 'Popular in Indian dals and soups.', image: '/img/about/pulses/pigeon-peas.jpg' },
+    { id: 21, title: 'Carrots', description: 'Rich in beta-carotene and ideal for salads and cooking.', image: '/img/about/vegetables/carrots.jpg' },
+    { id: 22, title: 'Potatoes', description: 'Staple vegetable used in a variety of dishes.', image: '/img/about/vegetables/potatoes.jpg' },
+    { id: 23, title: 'Tomatoes', description: 'Versatile vegetable used in sauces and salads.', image: '/img/about/vegetables/tomatoes.jpg' },
+    { id: 24, title: 'Spinach', description: 'Leafy green rich in iron and antioxidants.', image: '/img/about/vegetables/spinach.jpg' },
+    { id: 25, title: 'Bell Peppers', description: 'Crunchy and colorful, great for stir-fries and salads.', image: '/img/about/vegetables/bell-peppers.jpg' },
   ],
   rice: [
     { id: 1, title: 'Basmati Rice', description: 'Premium long-grain aromatic rice.', image: '/img/about/rice/basmati-rice.jpg' },
@@ -59,32 +59,32 @@ const categories = {
     { id: 5, title: 'Jasmine Rice', description: 'Fragrant and slightly sticky rice.', image: '/img/about/rice/jasmine-rice.jpg' },
   ],
   cereals: [
-    { id: 6, title: 'Wheat', description: 'Staple grain used to make flour.', image: '/img/cereals/wheat.jpg' },
-    { id: 7, title: 'Barley', description: 'Rich in fiber, great for soups and stews.', image: '/img/cereals/barley.jpg' },
-    { id: 8, title: 'Oats', description: 'Versatile grain, perfect for breakfast or baking.', image: '/img/cereals/oats.jpg' },
-    { id: 9, title: 'Millet', description: 'Nutritious, gluten-free grain, ideal for porridges.', image: '/img/cereals/millet.jpg' },
-    { id: 10, title: 'Quinoa', description: 'Protein-packed pseudo-cereal, great for salads.', image: '/img/cereals/quinoa.jpg' },
+    { id: 6, title: 'Wheat', description: 'Staple grain used to make flour.', image: '/img/about/cereals/wheat.jpg' },
+    { id: 7, title: 'Barley', description: 'Rich in fiber, great for soups and stews.', image: '/img/about/cereals/barley.jpg' },
+    { id: 8, title: 'Oats', description: 'Versatile grain, perfect for breakfast or baking.', image: '/img/about/cereals/oats.jpg' },
+    { id: 9, title: 'Millet', description: 'Nutritious, gluten-free grain, ideal for porridges.', image: '/img/about/cereals/millet.jpg' },
+    { id: 10, title: 'Quinoa', description: 'Protein-packed pseudo-cereal, great for salads.', image: '/img/about/cereals/quinoa.jpg' },
   ],
   spices: [
-    { id: 11, title: 'Turmeric', description: 'Golden spice known for its anti-inflammatory properties.', image: '/img/spices/turmeric.jpg' },
-    { id: 12, title: 'Cumin', description: 'Earthy spice used in curries and soups.', image: '/img/spices/cumin.jpg' },
-    { id: 13, title: 'Coriander', description: 'Fresh and citrusy spice used in various cuisines.', image: '/img/spices/coriander.jpg' },
-    { id: 14, title: 'Cardamom', description: 'Aromatic spice used in desserts and savory dishes.', image: '/img/spices/cardamom.jpg' },
-    { id: 15, title: 'Chili Powder', description: 'Adds heat and flavor to dishes.', image: '/img/spices/chili-powder.jpg' },
+    { id: 11, title: 'Turmeric', description: 'Golden spice known for its anti-inflammatory properties.', image: '/img/about/spices/turmeric.jpg' },
+    { id: 12, title: 'Cumin', description: 'Earthy spice used in curries and soups.', image: '/img/about/spices/cumin.jpg' },
+    { id: 13, title: 'Coriander', description: 'Fresh and citrusy spice used in various cuisines.', image: '/img/about/spices/coriander.jpg' },
+    { id: 14, title: 'Cardamom', description: 'Aromatic spice used in desserts and savory dishes.', image: '/img/about/spices/cardamom.jpg' },
+    { id: 15, title: 'Chili Powder', description: 'Adds heat and flavor to dishes.', image: '/img/about/spices/chilli-powder.jpg' },
   ],
   pulses: [
-    { id: 16, title: 'Red Lentils', description: 'Quick-cooking lentils, ideal for soups.', image: '/img/pulses/red-lentils.jpg' },
-    { id: 17, title: 'Green Gram (Moong)', description: 'Nutritious pulse rich in protein.', image: '/img/pulses/moong.jpg' },
-    { id: 18, title: 'Chickpeas', description: 'Versatile pulse, great for curries and hummus.', image: '/img/pulses/chickpeas.jpg' },
-    { id: 19, title: 'Black Gram (Urad)', description: 'Key ingredient in dal and dosa batter.', image: '/img/pulses/urad.jpg' },
-    { id: 20, title: 'Pigeon Peas (Toor Dal)', description: 'Popular in Indian dals and soups.', image: '/img/pulses/toor-dal.jpg' },
+    { id: 16, title: 'Red Lentils', description: 'Quick-cooking lentils, ideal for soups.', image: '/img/about/pulses/red-lentils.jpg' },
+    { id: 17, title: 'Green Gram (Moong)', description: 'Nutritious pulse rich in protein.', image: '/img/about/pulses/green-gram.jpg' },
+    { id: 18, title: 'Chickpeas', description: 'Versatile pulse, great for curries and hummus.', image: '/img/about/pulses/chickpeas.jpg' },
+    { id: 19, title: 'Black Gram (Urad)', description: 'Key ingredient in dal and dosa batter.', image: '/img/about/pulses/black-gram.jpg' },
+    { id: 20, title: 'Pigeon Peas (Toor Dal)', description: 'Popular in Indian dals and soups.', image: '/img/about/pulses/pigeon-peas.jpg' },
   ],
   vegetables: [
-    { id: 21, title: 'Carrots', description: 'Rich in beta-carotene and ideal for salads and cooking.', image: '/img/vegetables/carrots.jpg' },
-    { id: 22, title: 'Potatoes', description: 'Staple vegetable used in a variety of dishes.', image: '/img/vegetables/potatoes.jpg' },
-    { id: 23, title: 'Tomatoes', description: 'Versatile vegetable used in sauces and salads.', image: '/img/vegetables/tomatoes.jpg' },
-    { id: 24, title: 'Spinach', description: 'Leafy green rich in iron and antioxidants.', image: '/img/vegetables/spinach.jpg' },
-    { id: 25, title: 'Bell Peppers', description: 'Crunchy and colorful, great for stir-fries and salads.', image: '/img/vegetables/bell-peppers.jpg' },
+    { id: 21, title: 'Carrots', description: 'Rich in beta-carotene and ideal for salads and cooking.', image: '/img/about/vegetables/carrots.jpg' },
+    { id: 22, title: 'Potatoes', description: 'Staple vegetable used in a variety of dishes.', image: '/img/about/vegetables/potatoes.jpg' },
+    { id: 23, title: 'Tomatoes', description: 'Versatile vegetable used in sauces and salads.', image: '/img/about/vegetables/tomatoes.jpg' },
+    { id: 24, title: 'Spinach', description: 'Leafy green rich in iron and antioxidants.', image: '/img/about/vegetables/spinach.jpg' },
+    { id: 25, title: 'Bell Peppers', description: 'Crunchy and colorful, great for stir-fries and salads.', image: '/img/about/vegetables/bell-peppers.jpg' },
   ],
 };
 
@@ -94,21 +94,21 @@ const testimonials = [
     name: "Rajesh Kumar",
     role: "Farmer Partner",
     content: "Working with Mast Mart has transformed my farming business. Their fair pricing and direct market access have improved my income significantly.",
-    image: "/api/placeholder/50/50"
+    image: "/img/about/boy.png"
   },
   {
     id: 2,
     name: "Priya Sharma",
     role: "Regular Customer",
     content: "The quality of products from Mast Mart is consistently excellent. I appreciate knowing that my purchase supports local farmers.",
-    image: "/api/placeholder/50/50"
+    image: "/img/about/girl.png"
   },
   {
     id: 3,
     name: "Mohammed Ali",
     role: "Retail Partner",
     content: "Their efficient supply chain and quality products have helped our store maintain happy customers and healthy profits.",
-    image: "/api/placeholder/50/50"
+    image: "/img/about/man.png"
   }
 ];
 
@@ -152,11 +152,11 @@ const impactMetrics = [
   { id: 4, metric: "95%", description: "Customer Satisfaction" }
 ];
 
+
 const AboutPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
@@ -165,7 +165,7 @@ const AboutPage = () => {
     item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     item.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
+  
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -173,7 +173,7 @@ const AboutPage = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <img 
-            src="/api/placeholder/1920/1080" 
+            src="/img/about/background.jpg" 
             alt="Hero background" 
             className="w-full h-full object-cover"
           />
@@ -190,11 +190,15 @@ const AboutPage = () => {
             transparent supply chains, and quality products direct from farmers to consumers.
           </p>
           <div className="flex gap-4 justify-center">
-            <button className="bg-white text-green-700 px-8 py-4 rounded-full font-bold hover:bg-green-50 transition-all transform hover:scale-105">
-              Explore Products
+            <button
+              onClick={() => document.getElementById('our-products').scrollIntoView({ behavior: 'smooth' })}
+              className="bg-white text-green-700 px-8 py-4 rounded-full font-bold hover:bg-green-50 transition-all transform hover:scale-105">
+               Explore Products
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-green-700 transition-all transform hover:scale-105">
-              Partner With Us
+              <a href="/contact">
+                Partner With Us 
+              </a>
             </button>
           </div>
         </motion.div>
@@ -354,7 +358,7 @@ const AboutPage = () => {
       </section>
 
       {/* Products Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white" id="our-products">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

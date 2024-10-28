@@ -251,7 +251,7 @@ export default function Home() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-green-100 mb-12 max-w-3xl mx-auto">
-            Join thousands of farmers and retailers already benefiting from Citly's innovative platform.
+            Join thousands of farmers and retailers already benefiting from Citly&apos;s innovative platform.
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
