@@ -286,7 +286,7 @@ const RedesignedHomepage = () => {
               viewport={{ once: false }} // Animation triggers every time the element comes into view
             >
               <p className="text-lg sm:text-xl italic mb-6 text-gray-700">
-                "{testimonial.quote}"
+                &quot;{testimonial.quote}&quot;
               </p>
               <div className="flex items-center">
                 <img
